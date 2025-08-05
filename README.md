@@ -12,7 +12,7 @@ void loop() {
 }
 ```
 
-##### Ejercicio n° 2: semaforo
+##### Ejercicio n° 2: Semáforo
 
 ```js
 // C++ code - Semáforo Autos y Peatones
