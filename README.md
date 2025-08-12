@@ -58,8 +58,12 @@ void loop() {
 
   // 🚦 Fase 4: Rojo autos, rojo peatones (tiempo intermedio)
   digitalWrite(LED_4, LOW);   // Verde peatones apagado
-
+}
 ```
+<img
+src="https://github.com/benja2112/interfaz-2/blob/main/img/Semaforo.png"
+width="1024" heigth="550"
+
 ### Ejercicio n°3 Arduino: Luces Led Intremitente
 
 ```js
