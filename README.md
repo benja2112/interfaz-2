@@ -85,6 +85,8 @@ void loop() {   // Se repite infinitamente
   delay(2000); // 2 segundos
 }
 ```
+<img src="https://github.com/benja2112/interfaz-2/blob/main/img/ledintermitente.png"
+width="1024" heigth="550">
 ### Ejercicio n°4 AWrduino: Led Pulsador
 
 ```js
