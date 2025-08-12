@@ -95,7 +95,7 @@ void loop() {
   }
 }
 ```
-### Ejercicio n°5 Arduino: Led Potenciador
+### Ejercicio n°5 Arduino: Led Potenciómetro
 
 ```js
 void setup() {
