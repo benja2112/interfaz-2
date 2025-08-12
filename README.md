@@ -61,7 +61,7 @@ void loop() {
 }
 ```
 <img src="https://github.com/benja2112/interfaz-2/blob/main/img/Semaforo.png"
-width="1024" heigth="550">
+width="1310" heigth="721">
 
 ### Ejercicio n°3 Arduino: Luces Led Intremitente
 
@@ -86,7 +86,7 @@ void loop() {   // Se repite infinitamente
 }
 ```
 <img src="https://github.com/benja2112/interfaz-2/blob/main/img/ledintermitente.png"
-width="1024" heigth="550">
+width="1036" heigth="777">
 ### Ejercicio n°4 AWrduino: Led Pulsador
 
 ```js
@@ -104,7 +104,7 @@ void loop() {
 ```
 
 <img src="https://github.com/benja2112/interfaz-2/blob/main/img/ledpulsador.png"
-width="1024" heigth="550">
+width="998" heigth="762"/>
 ### Ejercicio n°5 Arduino: Led Potenciómetro
 
 ```js
@@ -118,4 +118,4 @@ void loop() {
 }
 ```
 <img src="https://github.com/benja2112/interfaz-2/blob/main/img/ledpotenciometro.png"
-width="1024" heigth="550">
+width="1152" heigth="797"/>
