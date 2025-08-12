@@ -1,5 +1,5 @@
 # interfaz-2
-## pagina del curso: https://mauricixx.github.io/Interfaces/#led-intermitente-blink
+## Página Del Curso: https://mauricixx.github.io/Interfaces/#led-intermitente-blink
 
 ### Ejercicio n° 1 Arduino: "Hola Mundo"
 
