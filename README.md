@@ -60,9 +60,8 @@ void loop() {
   digitalWrite(LED_4, LOW);   // Verde peatones apagado
 }
 ```
-<img
-src="https://github.com/benja2112/interfaz-2/blob/main/img/Semaforo.png"
-width="1024" heigth="550"
+<img src="https://github.com/benja2112/interfaz-2/blob/main/img/Semaforo.png"
+width="1024" heigth="550">
 
 ### Ejercicio n°3 Arduino: Luces Led Intremitente
 
