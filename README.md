@@ -291,4 +291,6 @@ void draw()
   
 }
 ```
+<img src="https://github.com/benja2112/interfaz-2/blob/main/img/Captura%20de%20pantalla%202025-08-26%20134448.
+png"width="1072" heigth="709"/>
 
