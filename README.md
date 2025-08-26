@@ -121,7 +121,7 @@ void loop() {
 width="1152" heigth="797"/>
 
 
-### Ejercicio n°6 Arduino: Semaforo Areglo
+### Ejercicio n°6 Arduino: Semaforo Arreglo
 
 ```js
 // C++ code - Semáforo Autos y Peatones
@@ -173,6 +173,8 @@ void loop() {
 }  
 ```
 ### Ejercicio n°7 Arduino: Semaforo Parpadiante
+
+```js
 
 // C++ code - Semáforo Autos y Peatones
 
