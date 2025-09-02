@@ -291,6 +291,72 @@ void draw()
   
 }
 ```
-<img src="https://github.com/benja2112/interfaz-2/blob/main/img/Captura%20de%20pantalla%202025-08-26%20134448.
-png"width="1072" heigth="709"/>
+<img
+src="https://github.com/benja2112/interfaz-2/blob/main/img/Captura%20de%20pantalla%202025-08-26%20134448.png"
+width="1072" heigth="709" /> 
+
+### Ejercicio n°9 Arduino Boton 
+
+```js
+int buttonPin = 2;  // Pin del botón
+int buttonState = 0;
+
+void setup() {
+  pinMode(buttonPin, INPUT_PULLUP); // Botón con resistencia interna
+  Serial.begin(9600);
+}
+
+void loop() {
+  buttonState = digitalRead(buttonPin);
+
+  if (buttonState == HIGH) {   // Botón presionado
+    Serial.println(1);        // Enviar un "1" a Processing
+    delay(200);               // Evitar rebotes
+  }
+}
+```
+### Ejercicio n°10 Arduino Boton Processig
+import processing.serial.*;
+
+Serial myPort;
+ArrayList<PVector> circles; 
+
+void setup() {
+  size(1920, 1500);
+  background(#EDA5EC);
+  
+  // Ajusta el nombre del puerto según tu Arduino
+  println(Serial.list());
+  //myPort = new Serial(this, "/dev/cu.usbmodem1101", 9600);
+  myPort = new Serial(this, Serial.list()[0], 9600);
+  
+  circles = new ArrayList<PVector>();
+}
+
+void draw() {
+  //background(0);
+  
+  // Dibujar círculos almacenados
+  fill(#A5EDDA);
+  //noStroke();
+  stroke(#00FFCE);
+  for (PVector c : circles) {
+    ellipse(c.x, c.y, 55, 50);
+  }
+  
+  // Revisar si llega algo de Arduino
+  if (myPort.available() > 0) {
+    String val = myPort.readStringUntil('\n');
+    if (val != null) {
+      val = trim(val);
+      if (val.equals("1")) {
+        // Cada vez que se aprieta el botón, agregar un círculo en posición aleatoria
+        circles.add(new PVector(random(width), random(height)));
+      }
+    }
+  }
+}
+```
+
+
 
