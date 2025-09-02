@@ -315,7 +315,7 @@ void loop() {
   }
 }
 ```
-### Ejercicio n°10 Arduino Boton Processig
+### Ejercicio n°9,5 Arduino Boton Processig
 
 ```js
 import processing.serial.*;
@@ -359,6 +359,32 @@ void draw() {
   }
 }
 ```
+### Ejercicio n°10 Arduino+boton+potenciador
+
+```js
+
+int buttonPin = 2;       // Pin del botón
+int potPin = A0;         // Pin del potenciómetro
+int buttonState = 0;
+
+void setup() {
+  pinMode(buttonPin, INPUT_PULLUP); // Botón con resistencia interna
+  Serial.begin(9600);
+}
+
+void loop() {
+  buttonState = digitalRead(buttonPin);
+
+  if (buttonState == HIGH) {   // Botón presionado
+    int potValue = analogRead(potPin);   // 0 - 1023
+    Serial.print("BTN,");     // etiqueta para Processing
+    Serial.println(potValue); // mando el valor junto con el evento
+    delay(50);               // debounce simple
+  }
+}
+```
+### Ejercicio n°10,5 Arduino+boton+protenciador processing
+```js
 
 
 
