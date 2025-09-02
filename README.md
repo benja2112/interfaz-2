@@ -316,6 +316,8 @@ void loop() {
 }
 ```
 ### Ejercicio n°10 Arduino Boton Processig
+
+```js
 import processing.serial.*;
 
 Serial myPort;
