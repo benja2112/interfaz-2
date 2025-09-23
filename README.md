@@ -387,6 +387,7 @@ void loop() {
 ```js
 ```
 ### Ejercicio n°11 Botonera Arduino
+```js
 // --- Configuración de botones ---
 const int numButtons = 3;
 const int buttonPins[numButtons] = {2, 4, 7};
@@ -457,6 +458,7 @@ void loop() {
 
 ```
 ### Ejercicio n°11,5 Botonera Processing
+```js
 
 // Importamos librería para comunicación serial
 import processing.serial.*;
@@ -537,6 +539,6 @@ void playTrack(int index) {
   // Actualizamos la variable para saber cuál es la pista activa
   currentTrack = index;
 }
-
+```
 
 
