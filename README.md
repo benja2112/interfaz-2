@@ -659,5 +659,5 @@ void draw() {
 ```
 <img src="https://github.com/benja2112/interfaz-2/blob/main/img/Captura%20de%20pantalla%202025-10-07%20120731.png"
 width="1152" heigth="797"/>
-<img src="https://https://github.com/benja2112/interfaz-2/blob/main/img/1000004932.jpg"797"/>
+<img src="https://https://github.com/benja2112/interfaz-2/blob/main/img/1000004932.jpg"797"/>width="1152" heigth="797"/>
 
