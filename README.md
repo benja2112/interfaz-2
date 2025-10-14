@@ -858,3 +858,20 @@ void serialEvent(Serial port) {
 <img src="https://github.com/benja2112/interfaz-2/blob/main/img/1000005287.jpg"
 width="1152" heigth="797"/>
 
+### Censor Humedad
+
+```js
+
+void setup()
+{
+  Serial.begin(9600);// abre el puerto serial y Establece la velocidad en baudios a 9600 bps
+}
+void loop()
+{
+  int sensorValue;
+  sensorValue = analogRead(0);   //conectar el sensor de humedad al pin analogo 0
+  Serial.println(sensorValue); //imprime el valor a serial.
+  delay(200);
+}
+
+<img src="https://github.com/benja2112/interfaz-2/blob/main/img/1000005288.jpg" heigth="797"/>
