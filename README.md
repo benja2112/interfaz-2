@@ -874,4 +874,4 @@ void loop()
   delay(200);
 }
 
-<img src="https://github.com/benja2112/interfaz-2/blob/main/img/1000005288.jpg" heigth="797"/>
+<img src="https://github.com/benja2112/interfaz-2/blob/main/img/1000005288.jpg"width="1152" heigth="797"/>
