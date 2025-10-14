@@ -662,3 +662,115 @@ width="1152" heigth="797"/>
 
 <img src="https://github.com/benja2112/interfaz-2/blob/main/img/1000004932.jpg" width="1500" heigth="2000"/>
 
+### Sensor Distancia Arduino
+
+```js
+// Definir el pin del sensor Sharp
+int sharpPin = A0;
+
+void setup() {
+  Serial.begin(9600); // Iniciar comunicación serial
+}
+
+void loop() {
+  int sensorValue = analogRead(sharpPin); // Leer valor del sensor
+  Serial.println(sensorValue); // Enviar valor a Processing
+  delay(100); // Esperar un momento
+}
+## Sensor distancia Processing
+
+import processing.serial.*;
+
+Serial myPort;  // Create object from Serial class
+static String val;    // Data received from the serial port
+int sensorVal = 0;
+
+void setup()
+{
+  background(0); 
+  //fullScreen(P3D);
+   size(1080, 720);
+   noStroke();
+  noFill();
+  String portName = "COM3";// Change the number (in this case ) to match the corresponding port number connected to your Arduino. 
+
+  myPort = new Serial(this, Serial.List(), 9600);
+}
+
+void draw()
+{
+  if ( myPort.available() > 0) {  // If data is available,
+  val = myPort.readStringUntil('\n'); 
+  try {
+   sensorVal = Integer.valueOf(val.trim());
+  }
+  catch(Exception e) {
+  ;
+  }
+  println(sensorVal); // read it and store it in vals!
+  }  
+ //background(0);
+  // Scale the mouseX value from 0 to 640 to a range between 0 and 175
+  float c = map(sensorVal, 0, width, 0, 400);
+  // Scale the mouseX value from 0 to 640 to a range between 40 and 300
+  float d = map(sensorVal, 0, width, 40,500);
+  fill(255, c, 0);
+  ellipse(width/2, height/2, d, d);   
+
+}
+```
+<img src="https://github.com/benja2112/interfaz-2/blob/main/img/1000004932.jpg"
+width="1152" heigth="797"/>
+
+<img src="https://github.com/benja2112/interfaz-2/blob/main/img/Captura%20de%20pantalla%202025-10-14%20115047.png"
+width="1152" heigth="797"/>
+
+
+
+### Video Ascci
+```js
+import processing.video.*;
+
+Capture cam;
+String asciiChars = "@&%*+º‽†…  ";  // Characters from dark to light
+int cols, rows;
+int cellSize = 10; // Size of each ASCII cell
+
+void setup() {
+  size(640, 480);
+  cam = new Capture(this, 640, 480);
+  cam.start();
+  textAlign(CENTER, CENTER);
+  textSize(cellSize);
+  cols = width / cellSize;
+  rows = height / cellSize;
+}
+
+void draw() {
+  if (cam.available() == true) {
+    cam.read();
+  }
+
+  cam.loadPixels();
+  background(0);
+
+  for (int y = 0; y < rows; y++) {
+    for (int x = 0; x < cols; x++) {
+      int pixelX = x * cellSize;
+      int pixelY = y * cellSize;
+      int index = pixelX + pixelY * cam.width;
+      color c = cam.pixels[index];
+      
+      // Calculate brightness and map it to ASCII characters
+      float bright = brightness(c);
+      int charIndex = int(map(bright, 0, 255, asciiChars.length() - 1, 0));
+      String asciiChar = asciiChars.substring(charIndex, charIndex + 1);
+
+      fill(255);
+      text(asciiChar, pixelX + cellSize * 0.5, pixelY + cellSize * 0.5);
+    }
+  }
+}
+```
+<img src=""
+width="1152" heigth="797"/>
