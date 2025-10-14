@@ -873,5 +873,5 @@ void loop()
   Serial.println(sensorValue); //imprime el valor a serial.
   delay(200);
 }
-
+```
 <img src="https://github.com/benja2112/interfaz-2/blob/main/img/1000005288.jpg" width="1152" heigth="797"/>
