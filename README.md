@@ -897,6 +897,9 @@ void loop() {
   delay(50); // envío cada 50 ms
 }
 ```
+<img src="https://github.com/benja2112/interfaz-2/blob/main/img/20251021_125217.jpg"
+width="1152" heigth="797"/>
+
 ### Cuerpo Video Censor Sharp Processing
 
 ```js
@@ -982,7 +985,5 @@ void draw() {
 }
 ```
 <img src="https://github.com/benja2112/interfaz-2/blob/main/img/Captura%20de%20pantalla%202025-10-21%20125919.png"
-width="1152" heigth="797"/>
-<img src="https://github.com/benja2112/interfaz-2/blob/main/img/20251021_125217.jpg"
 width="1152" heigth="797"/>
 
