@@ -18,7 +18,7 @@
 12 [ENTREGA 07/10/25](#entrega-071025)<br>
 13 [Sensor Distancia Arduino](#sensor-distancia-arduino)<br>
 14 [Video Ascci](#video-ascci)<br>
-15 [Video Glitch])(#video-glitch)<br>
+15 [Video Glitch](#video-glitch)<br>
 16 [Censor Humedad](#censor-humedad)<br>
 17 [Cuerpo Video Censor Sharp Arduino](#cuerpo-video-censor-sharp-arduino)<br>
 18 [Cuerpo Video Censor Sharp Processing](#cuerpo-video-censor-sharp-processing)<br>
