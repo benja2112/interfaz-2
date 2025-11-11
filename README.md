@@ -6,6 +6,26 @@
 3 [led intermitente](#ejercicio-n3-arduino-luces-led-intremitente)<br>
 4 [led pulsador](#ejercicio-n4-awrduino-led-pulsador)<br>
 5 [led potenciometro](#ejercicio-n5-arduino-led-potenci%C3%B3metro)<br>
+6 [semaforo arreglo](#ejercicio-n6-arduino-semaforo-arreglo)<br>
+7 [Semaforo Parpadiante](#ejercicio-n7-arduino-semaforo-parpadiante)<br>
+8 [arduino processing](#ejercicio-n8-arduino-processing)<br>
+9 [Arduino Boton](#ejercicio-n9-arduino-boton)<br>
+9,5 [Arduino Boton Processig](#ejercicio-n95-arduino-boton-processig)<br>
+10 [Arduino+boton+potenciador](#ejercicio-n10-arduinobotonpotenciador)<br>
+10,5 [Arduino+boton+protenciador processing](#ejercicio-n105-arduinobotonprotenciador-processing)<br>
+11 [Botonera Arduino](#ejercicio-n11-botonera-arduino)<br>
+11,5 [Botonera Processing](#ejercicio-n115-botonera-processing)<br>
+12 [ENTREGA 07/10/25](#entrega-071025)<br>
+13 [Sensor Distancia Arduino](#sensor-distancia-arduino)<br>
+14 [Video Ascci](#video-ascci)<br>
+15 [Video Glitch])(#video-glitch)<br>
+16 [Censor Humedad](#censor-humedad)<br>
+17 [Cuerpo Video Censor Sharp Arduino](#cuerpo-video-censor-sharp-arduino)<br>
+18 [Cuerpo Video Censor Sharp Processing](#cuerpo-video-censor-sharp-processing)<br>
+19 [Promedio Imagenes arduino](#promedio-imagenes-arduino)<br>
+20 [Promnedio Imagenes Processing](#promnedio-imagenes-processing)<br>
+21 [Entrega n°2 de Arduino y Processing: CHROMA.S](#entrega-n2-de-arduino-y-processing-chromas)<br>
+
 ### Ejercicio n° 1 Arduino: "Hola Mundo"
 ```js
 void setup() {
