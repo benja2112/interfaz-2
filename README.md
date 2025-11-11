@@ -1085,7 +1085,9 @@ void calcAverage(float t) {
 ```
 <img src="https://github.com/benja2112/interfaz-2/blob/main/img/Captura%20de%20pantalla%202025-10-21%20133402.png"
 width="1152" heigth="797"/>
+
 ### Entrega n°2 de Arduino y Processing: CHROMA.S
+```js
 Código Arduino:
 
 // --- Configuración de botones ---
