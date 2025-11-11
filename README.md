@@ -1,11 +1,12 @@
 # INTERFAZ II
 ## Página Del Curso: https://mauricixx.github.io/Interfaces/#led-intermitente-blink
 
-### Ejercicio n° 1 Arduino: "Hola Mundo"
 1 [ Hola Mundo](#ejercicio-n-1-arduino-hola-mundo) <br>
 2 [ semaforo ](#ejercicio-n-2-arduino--sem%C3%A1foro) <br>
 3 [led intermitente](#ejercicio-n3-arduino-luces-led-intremitente)<br>
-4 [led pulsador](#ejercicio-n4-awrduino-led-pulsador)<be>
+4 [led pulsador](#ejercicio-n4-awrduino-led-pulsador)<br>
+5 [led potenciometro](#ejercicio-n5-arduino-led-potenci%C3%B3metro)<br>
+### Ejercicio n° 1 Arduino: "Hola Mundo"
 ```js
 void setup() {
   Serial.begin(9600); // Inicia la comunicación serie a 9600 bps
